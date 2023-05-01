@@ -1,0 +1,378 @@
+/* Estilos para la navegación */
+.navbar {
+    background-color: #007bff;
+    border-bottom: none;
+  }
+  
+  .navbar-brand {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .navbar-nav li.nav-item:hover a.nav-link {
+    color: #007bff !important;
+    border-bottom: 2px solid #ffc107 !important;
+  }
+  
+  .navbar-toggler {
+    border-color: #fff;
+  }
+  
+/* Estilos para la sección de bienvenida */
+.jumbotron {
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #007bff;
+    
+}
+.display-4 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #000000;
+    opacity: 0;
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.lead, .button-35 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    opacity: 0;
+    animation: slide-in 1s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*Estilos para boton de jumbotron*/
+/* CSS */
+.button-35 {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: transparent 0 0 0 3px, rgba(18, 18, 18, .1) 0 6px 20px;
+    box-sizing: border-box;
+    color: #121212;
+    cursor: pointer;
+    display: inline-flex;
+    flex: 1 1 auto;
+    font-family: Inter, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    padding: 1rem 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: box-shadow .2s, -webkit-box-shadow .2s;
+    white-space: nowrap;
+    border: 0;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-35:hover {
+    box-shadow: #121212 0 0 0 3px, transparent 0 0 0 0;
+}
+  @media (max-width: 768px) {
+    .button-container {
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+  }
+  
+
+/* Estilos para la sección "Acerca de mí" */
+.container {
+    background-color: #f8f9fa;
+    padding: 50px;
+    border-radius: 10px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    text-justify: auto;
+    }
+    
+  .svg-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .svg-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 767px) {
+    .svg-image {
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .svg-container {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  
+/* Estilos para las tarjetas de los proyectos */
+#projects {
+  padding: 50px;
+  margin-top: 50px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.project-card {
+    background-color: #fff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+.project-card img {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #212529;
+}
+
+.project-card p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.btn-outline-secondary {
+    color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-outline-secondary:hover {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+}
+
+
+/* Estilos para la sección Skills */
+#skills {
+  padding: 50px;
+  border-radius: 10px;
+  text-align: center;
+  }
+  
+  #skills h2 {
+    color: #007bff;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+  }
+  
+  #skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  #skills li {
+    margin: 30px;
+    flex-basis: calc(33.33% - 60px);
+    text-align: center;
+  }
+  
+  #skills img {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+  }
+  
+  #skills span {
+    color: #007bff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+  #skills li:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px; /* El mismo valor de border-radius que tienen tus imágenes */
+  }
+  
+  
+
+
+/*Estilos para seccion de contact me*/
+#contact {
+  background-color: #f8f9fa;
+  padding: 50px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  #contact label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact textarea {
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #555;
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #007bff;
+    margin-bottom: 20px;
+  }
+  
+  #contact textarea {
+    resize: none;
+  }
+  
+  #contact button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    border-radius: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px 40px;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 767px) {
+    #contact h2 {
+      font-size: 2rem;
+    }
+  
+    #contact label {
+      font-size: 1.1rem;
+    }
+  
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact textarea {
+      font-size: 1.1rem;
+      margin-bottom: 15px;
+    }
+  
+    #contact button[type="submit"] {
+      font-size: 1.1rem;
+      padding: 10px 30px;
+      margin-top: 15px;
+    }
+  
+    #contact {
+      padding: 20px;
+    }
+  }
+  
+/*Footer section*/
+/* Desktop */
+footer {
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 30px 0;
+  }
+  
+  footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #0056b3;
+  }
+  .social-icons a {
+    display: inline-block;
+    color: #007bff;
+    font-size: 30px;
+    line-height: 1;
+    margin-right: 10px;
+  }
+  
+  /* Mobile */
+  @media(max-width:767px) {
+    footer {
+      background-color: #f9f9f9;
+      color: #333;
+      padding: 20px 0;
+    }
+  
+    .social-icons a {
+      font-size: 24px;
+    }
+  }
+  
